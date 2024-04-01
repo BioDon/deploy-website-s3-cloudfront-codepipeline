@@ -1,359 +1,160 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/cards.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/video.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/partners.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="icon" href="./assets/favicon.png" type="image/png">
-    <script src="./js/feather.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wild Rydes</title>
+
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr.js"></script>
 </head>
+<body class="page-home">
 
-<body>
+  <header class="site-header">
+    <h1 class="title">Wild Rydes</h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="unicorns.html">Meet the Unicorns</a></li>
+        <li><a href="investors.html">Investors &amp; Board of Directors</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="btn-menu"><span>Menu</span></button>
+    <a class="home-button" href="/register.html">Giddy Up!</a>
+  </header>
 
-    <header id="home">
-        <div class="container">
-            <div class="topbar">
-                <div class="topcontact">
-                    <div class="topmailtext">
-                        <i class="custom-icon" data-feather="mail"></i>
-                        <span>attorney@atorn.org</span>
-                    </div>
-                    <div class="topphonetext">
-                        <i data-feather="phone"></i>
-                        <span>+233 1234 56 79</span>
-                    </div>
-                </div>
-                <div class="topsocial">
-                    <div class="topicons">
-                        <div class="icon-container">
-                            <i class="custom-icon" data-feather="facebook"></i>
-                        </div>
-                        <div class="icon-container">
-                            <i class="custom-icon" data-feather="twitter"></i>
-                        </div>
-                        <div class="icon-container">
-                            <i  class="custom-icon" data-feather="instagram"></i>
-                        </div>
-                        
-                    </div>
-                    <div class="topbutton">
-                        <button class="btn">Get a schedule</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menubar">
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="logo">
-                </div>
-                <nav class="nav">
-                    <div class="mobile-menu">
-                        <i data-feather="menu" class="hamburger" id="openOverlay" onclick="openOverlay()"></i>
-                    </div>
-                    <div class="navitems">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#hero">Services</a></li>
-                            <li><a href="#videosection">Video</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#partners">Partners</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            
-            <div class="overlay" id="overlay">
-                <div class="overlay-content">
-                  <span class="feather" id="closeOverlay" onclick="closeOverlay()">
-                    <i data-feather="x" class="closeicon"></i>
-                    </span>  
-                </div>
-
-                <div class="menubar-overlay">
-                    <ul>
-                        <li><a href="#home" class="item">Home</a></li>
-                        <li><a href="#about" class="item">About Us</a></li>
-                        <li><a href="#hero" class="item">Services</a></li>
-                        <li><a href="#videosection" class="item">Video</a></li>
-                        <li><a href="#contact" class="item">Contact</a></li>
-                        <li><a href="#partners" class="item">Partners</a></li>
-                    </ul>
-                </div>
-                    
-            </div>
-
-        </div>
-    </header>
-
-    <section id="hero" class="hero">
-
-        <div class="herooverlay"></div>
-
-        <div class="herocontent">
-            <div class="herotitle">Right way...</div>
-            <div class="herotext">It’s Our Pride <br> To Fight For Your Dream</div>
-            <div class="herodesc">But I must explain to you how all this mistaken idea of
-                denouncing pleasure and praising pain was born and I will give 
-                you a complete account of the system, and expound the actual 
-                teachings of the great explorer of the truth.</div>
-        </div>
-
-        <div class="herobuttons">
-            <button class="herobtn freeconsulting">Free Consulting</button>
-            <button class="herobtn learnmore">Learn More</button>
-        </div>
-    </section>
-
-    <section class="cards">
-        <div class="card-content">
-            <div class="card courtperformance">
-                <span class="cardheading">Court Performance</span>
-                <div>
-                    <i class="cardicon" data-feather="home"></i>
-                </div>
-                <div class="cardtext">At vero eos et accusamus et iusto odio 
-                    dignissimos ducimus qui blanditiis 
-                    praesentium voluptatum deleniti atque.</div>
-            </div>
-            <div class="card docreview">
-                <span class="cardheading">Document Review</span>
-                <div>
-                    <i class="cardicon" data-feather="file-text"></i>
-                </div>
-                <div class="cardtext">At vero eos et accusamus et iusto odio 
-                    dignissimos ducimus qui blanditiis 
-                    praesentium voluptatum deleniti atque.</div>
-            </div>
-            <div class="card expattorney">
-                <span class="cardheading">Expert Attorney</span>
-                <div>
-                    <i class="cardicon" data-feather="anchor"></i>
-                </div>
-                <div class="cardtext">At vero eos et accusamus et iusto odio 
-                    dignissimos ducimus qui blanditiis 
-                    praesentium voluptatum deleniti atque.</div>
-            </div>
-            <div class="card casedismiss">
-                <span class="cardheading">Case Dismissed</span>
-                <div>
-                    <i class="cardicon" data-feather="bell"></i>
-                </div>
-                <div class="cardtext">At vero eos et accusamus et iusto odio 
-                    dignissimos ducimus qui blanditiis 
-                    praesentium voluptatum deleniti atque.</div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="about-content">
-            <div class="about-img"></div>
-            <div class="about-us">
-                <div class="about-us-text about-us-start">About Us</div>
-                <div class="about-us-text about-us-heading">We Are Top Lawyers With <br> <span class="years">25 Years</span> Of Experience</div>
-                <div class="about-us-text about-us-para">On the other hand, we denounce with righteous indignation
-                    and dislike men who are so beguiled and demoralized by the 
-                    charms of pleasure of the moment, so blinded by desire, that 
-                    they cannot foresee the pain and trouble that are bound to 
-                    ensue.</div>
-                <div class=" about-us-list">
-                    <ul>
-                        <li><i class="about-icon" data-feather="check-square"></i>100% Success Rate</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>No Need Extra Cost for Consultation</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>Expert Legal Service</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>Highly Recommended</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>Fast Support</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>High Court Performance</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>Free Counseling</li>
-                        <li><i class="about-icon" data-feather="check-square"></i>Quick Complete Case</li>
-                    </ul>
-                </div>
-                <button class="aboutbtn">Free Consulting</button>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="videosection" class="videosection">
-        <div class="videotext">
-            <div class="vidtextone">We Fight For Right, Meet Us To 
-                Solve Your Legal Problem In Right 
-                Way</div>
-            <div class="vidtexttwo">At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis praesentium voluptatum 
-               deleniti atque corrupti quos dolores et quas 
-               molestias excepturi sint occaecati cupiditate non 
-               provident, similique sunt in culpa qui officia
-                deserunt mollitia animi id est laborum et dolorum 
-               fuga.</div>
-            <div class="vidtextthree"></div>
-            <div class="vidtextfour">Anthomas Darlos</div>
-            <div class="vidtextfive">Senior Attorney & Founder of Atorn</div>
-        </div>
-        <div class="video">
-            <div class="vid-overlay"><i class="vidicon" data-feather="play"></i></div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="contact-text">
-            <div class="contact-text-one">Contact Us Today, Get In Touch With Expert</div>
-            <div class="contact-text-two">On the other hand, we denounce with righteous indignation
-                and dislike men who are so beguiled and demoralized by the
-                charms of pleasure of the moment, so blinded by desire hat
-                they cannot foresee the pain and trouble.</div>
-            <div class="contact-phone-number">
-                <div class="contact-phone">Phone Number</div>
-                <div class="contact-number">+233 1234 56 79</div>
-            </div>
-            <div class="contact-social-media">
-            <div class="contact-social">Our Social Links</div>
-            <div class="contact-social-icons">
-                <div class="icon-container-contact">
-                    <i class="custom-icon-contact" data-feather="facebook"></i>
-                </div>
-                <div class="icon-container-contact">
-                    <i class="custom-icon-contact" data-feather="twitter"></i>
-                </div>
-                <div class="icon-container-contact">
-                    <i  class="custom-icon-contact" data-feather="instagram"></i>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <div class="contact-form-text">Get A Flexible Schedule</div>
-            <form>
-                <div class="grid-container">
-                <label><i class="form-user-icon" data-feather="user"></i> <input placeholder="   Full name"></input> </label> 
-                <label><i class="form-user-icon" data-feather="mail"></i> <input placeholder="   Email Address"></input> </label> 
-                <label><i class="form-user-icon" data-feather="phone"></i> <input placeholder="   Phone No"></input> </label> 
-                <label><i class="form-user-icon" data-feather="calendar"></i> <input type="date" placeholder="dd/mm/yyyy"></input> </label> 
-                </div>
-                <label class="message-box"><i class="form-user-icon" data-feather="message-square"></i> <textarea rows="12" cols="37" placeholder="   Write your message..."></textarea> </label>
-                <button class="contact-form-btn">Get an Appointment</button>
-            </form>
-            
-        </div>
-
-    </section>
-
-
-    <section id="partners" class="partners">
-            <div class="partner-head">Our Partners</div>
-            <div class="partner-text">Trusted By Many Front Line Teams Everywhere</div>
-            <div class="partner-logos">
-                <div class="partner-one"></div>   
-                <div class="partner-two"></div>
-                <div class="partner-three"></div>
-                <div class="partner-four"></div> 
-            </div>
-    </section>
-
-    <footer>
-        <div class="footer-info">
-            <div class="footer-heading">
-                <div class="footer-logo"></div>
-                <div class="footer-text">At vero eos et accusamus et iusto odio dignissimos 
-                    ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias
-                     excepturi sint occaecati cupiditate non provident, 
-                    similique sunt in culpa qui officia deserunt mollitia 
-                    animi, id est laborum et dolorum fuga. Et harum 
-                    quidem rerum.</div>
-                <div class="contact-social-icons">
-                        <div class="icon-container-contact">
-                            <i class="custom-icon-contact" data-feather="facebook"></i>
-                        </div>
-                        <div class="icon-container-contact">
-                            <i class="custom-icon-contact" data-feather="twitter"></i>
-                        </div>
-                        <div class="icon-container-contact">
-                            <i  class="custom-icon-contact" data-feather="instagram"></i>
-                        </div>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <div class="footer-links-heading">Quick Links</div>
-                <div class="footer-links-list">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li> 
-                        <li><a href="#hero">Our Services</a></li>
-                        <li><a href="#videosection">Video</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#partners">Partners</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-services">
-                <div class="footer-services-heading">Services</div>
-                <div class="footer-services-list">
-                    <ul>
-                        <li><a href="#">Civil Law</a></li>
-                        <li><a href="#">Family Law</a></li> 
-                        <li><a href="#">Cyber Law</a></li>
-                        <li><a href="#">Education Law</a></li>
-                        <li><a href="#">Business Law</a></li>
-                        <li><a href="#">Investment Law</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-contact-info">
-                <div class="footer-contact-heading">Contact Info</div>
-                <div class="footer-contact-list">
-                    <ul>
-                        <li class="footer-list-contact"><i class="footer-contact-icon" data-feather="phone"></i>+233 1234 56 79</li>
-                        <li class="footer-list-contact"><i class="footer-contact-icon" data-feather="mail"></i>attorney@atorn.org</li>
-                        <li class="footer-list-contact"><i class="footer-contact-icon" data-feather="mail"></i>North Legon - Accra, Ghana</li>
-                </div>
-        </div>
+  <section class="home-about">
+    <div class="row column large-9 xlarge-6 xxlarge-4">
+      <h2 class="section-title">How Does This Work?</h2>
+      <p class="content">
+        In today’s fast paced world, you’ve got places you need to be but not enough time in your jam packed schedule. Wouldn’t it be nice if there were a transportation service that changed the way you get around daily? Introducing Wild Rydes, an innovative transportation service that helps people get to their destination faster and hassle-free. Getting started is as easy as tapping a button in our app.
+      </p>
     </div>
-    </footer>
 
-        <div class="copyright">
-            <div class="copytext">2023 © Atorn. All Rights Reserved.</div>
+    <div class="row medium-up-2 large-up-4">
+      <div class="column">
+        <div class="home-about-block">
+          <h3 class="title icon-download">Download The App</h3>
+          <p class="content">Head over to the app store and download the Wild Rydes app. You’re just a few taps away from getting your ryde.</p>
         </div>
-    
+      </div>
 
+      <div class="column">
+        <div class="home-about-block">
+          <h3 class="title icon-unicorn">Request A Unicorn</h3>
+          <p class="content">We can get you there. Simply request a ryde on the app and we'll connect you with a unicorn immediately.</p>
+        </div>
+      </div>
 
+      <div class="column">
+        <div class="home-about-block">
+          <h3 class="title icon-price">Pick A Price</h3>
+          <p class="content">Pick the valuation you're willing to pay and your ryde is set up. The only surge is the acceleration you get when taking off.</p>
+        </div>
+      </div>
 
+      <div class="column">
+        <div class="home-about-block">
+          <h3 class="title icon-success">Ride Off To Success!</h3>
+          <p class="content">After matching with your unicorn and agreeing to its terms, you’ll be all set. Your unicorn will arrive shortly to pick you up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        feather.replace();
+  <section class="home-story">
+    <div class="row column large-9 xlarge-6 xxlarge-4">
+      <h2 class="section-title">Our Story</h2>
+      <p class="content">
+        Wild Rydes was started by a former hedge fund analyst and a software developer. The two long-time friends happened upon the Wild Rydes idea after attending a silent yoga retreat in Nevada. After gazing upon the majestic herds of unicorns prancing across a surreal Nevada sunset, they witnessed firsthand the poverty and unemployment endemic to that once proud race. Whether it was modern society’s reliance on science over magic or not, we’ll never know the cause of their Ozymandian downfall and fade to obscurity. Moved by empathy, romance, and free enterprise, they saw an opportunity to marry society’s demand for faster, more flexible transportation to underutilized beasts of labor through an on-demand market making transportation app. Using the founders’ respective expertise in animal husbandry and software engineering, Wild Rydes was formed and has since raised untold amounts of venture capital. Today, Wild Rydes has thousands of unicorns in its network fulfilling hundreds of rydes each day.
+      </p>
+    </div>
+  </section>
 
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-            document.getElementById("openOverlay").style.display = "none";
-        }
+  <section class="home-sign-up">
+    <div class="row column">
+      <img class="icon-w" src="images/wr-home-W.png">
 
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none"
-            document.getElementById("openOverlay").style.display = "block";
-        }
+      <form onsubmit="javascript:void(0);">
+        <input type="email" placeholder="Enter your email address">
+        <button type="button">Submit</button>
+      </form>
 
-        // Get all the nav items
-        var navItems = document.querySelectorAll('.item');
+      <h2 class="section-title">Sign Up</h2>
 
-        // Add a click event listener to each nav item
-        navItems.forEach(function(navItem) {
-            navItem.addEventListener('click', closeOverlay);
-        });
-            
-    </script>
+      <p class="content">Wild Rydes is coming soon! Enter your email to enter the limited private beta</p>
+
+      <div class="apps">
+        <a class="app-icon" href=""><img src="images/wr-home-apple.png"></a>
+        <a class="app-icon" href=""><img src="images/wr-home-google.png"></a>
+        <a class="app-icon" href=""><img src="images/wr-home-blackberry.png"></a>
+        <a class="app-icon" href=""><img src="images/wr-home-Xiaomi.png"></a>
+      </div>
+
+      <div class="social">
+        <a class="icon-fb" href="">Facebook</a>
+        <a class="icon-tw" href="">Twitter</a>
+        <a class="icon-ig" href="">Instagram</a>
+        <a class="icon-wc" href="">Wechat</a>
+        <a class="icon-wb" href="">Weibo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-quote">
+    <div class="row column medium-8 xxlarge-6">
+      <div class="quote-wrap">
+        <div class="quote">
+          “I was almost late to my ultimate frisbee tournament in DOLORES park. BUt Wild Rydes Got me there from the marina in under five minutes.”
+        </div>
+        <div class="quoter">- Satisfied Wild Rydes User</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kraken-callout">
+    <div class="row">
+      <div class="columns medium-6 xxlarge-4 xxlarge-offset-2">
+        <img src="images/wr-home-kraken.png">
+      </div>
+
+      <div class="columns medium-6 xlarge-5 xxlarge-4">
+        <h4 class="title">Coming Soon</h4>
+        <p class="content">
+          Kraken 3xplorer and Dragon Flyght. We’re looking to provide you a full service package from air, land, and to sea.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="row column">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="unicorns.html">Meet the Unicorns</a></li>
+          <li><a href="investors.html">Investors & Board of Directors</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="apply.html">Apply</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="row column">
+      <div class="footer-legal">
+        &copy;WildRydes Inc<br>
+        All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
