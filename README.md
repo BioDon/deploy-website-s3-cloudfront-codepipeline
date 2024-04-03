@@ -12,7 +12,7 @@ Let's dive in and explore how to harness the power of AWS for hosting your stati
 
 ### Application Architecture
 
-![Application Architecture](./images/architecture.jpg)
+![Application Architecture](./images/Architecture.jpg)
 
 When a user accesses your website by entering its DNS address into their web browser, the journey begins. The DNS service, in our case facilitated by Namecheap.com (though alternatives like Route 53 or GoDaddy.com are viable options), comes into play behind the scenes.
 
