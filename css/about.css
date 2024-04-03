@@ -1,0 +1,165 @@
+.about {
+    height: 960px;
+    /* border: 1px solid lightgray; */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.about-img {
+    background-image: url(../assets/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 353.656px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    
+}
+
+.about-us-start {
+    font-size: 12px;
+    border-bottom: 2px solid #C82424;
+    color: #6C6C6C;
+    padding-bottom: 1%;
+    width: 16%;
+}
+
+.about-us-heading {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.years {
+    color: #C82424;
+}
+
+.about-us-para {
+    font-size: 13px;
+    color: #6C6C6C;
+}
+
+.about-us-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-us-list ul li {
+    font-size: 13px;
+    color: #6C6C6C;
+    list-style: none;
+    display: flex; /* to align in a straight line */
+    align-items: center; /* to align in a straight line */
+}
+
+.about-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5%;
+}
+
+.aboutbtn {
+    background-color: #C82424;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 125px;
+    margin-top: 10px;
+}
+
+@media (min-width:601px) and (max-width:900px) {
+    .about {
+        height: 1375px;
+    }
+
+    .about-img {
+        background-image: url(../assets/about-tablet.png);
+        height: 703.685px;
+    }
+
+    .about-us-start {
+        font-size: 16px;
+        width: 11%;
+    }
+
+    .about-us-heading {
+        font-size: 33px;
+    }
+
+    .about-us-para {
+        font-size: 16px;
+    }
+
+    .about-us-list ul li {
+        font-size: 16px;
+    }
+
+    .about-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .aboutbtn {
+        font-size: 14px;
+        padding: 15px;
+        width: 175px;
+    }
+}
+
+@media (min-width:900px) {
+    .about {
+        height: 800px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .about-content > div {
+        flex: 1;
+    }
+    
+    .about-img {
+        background-image: url(../assets/about-tablet.png);
+        height: 800px;
+        width: 90%;
+        background-size: contain;
+        /* border: 1px solid lightgray; */
+        background-position: center;
+        margin: 0 0 0 25px;
+    }
+
+    .about-us {
+        margin: 20px;
+        padding: 50px;
+    }
+
+    .about-us-start {
+        font-size: 18px;
+        width: 10%;
+    }
+
+    .about-us-heading {
+        font-size: 30px;
+    }
+
+    .about-us-para {
+        font-size: 20px;
+    }
+
+    .about-us-list ul li {
+        font-size: 16px;
+    }
+    
+}

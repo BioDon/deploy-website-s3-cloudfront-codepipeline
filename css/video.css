@@ -1,0 +1,134 @@
+.videosection {
+    height: 838px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.videotext {
+    height: 423px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5%;
+    padding: 20px;
+    background-color: #C82424;
+    color: white;
+    border-radius: 5px;
+}
+
+.vidtextone {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.vidtexttwo {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.vidtextthree {
+    background-image: url(../assets/signature.png);
+    width: 96px;
+    height: 39px;
+
+}
+
+.vidtextfour {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.vidtextfive {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.video {
+    background-image: url(../assets/video.png);
+    background-position: center;
+    height: 325px;
+    margin: 5%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.vid-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../assets/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vidicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+@media (min-width:601px) and (max-width:900px) {
+    .videotext {
+        margin: 10% 10% 0 10%;
+        padding: 25px;
+    }
+
+    .vidtextone {
+        font-size: 30px;
+    }
+    
+    .video {
+        background-image: url(../assets/video-tablet.png);
+        margin: 5% 10% 10% 10%;
+    }
+}
+
+@media (min-width:900px) {
+    .videosection {
+        height: 630px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f5f0f0;
+
+
+        position: relative;
+    }
+
+    .videotext {
+        height: 423px;
+        width: 652px;
+        margin-right: 0;
+        
+        
+        position: absolute;
+        right: 50%;
+        z-index: 5;
+    }
+
+    .vidtextone {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .video {
+        background-image: url(../assets/video-desktop.png);
+        background-position: contain;
+        background-repeat: no-repeat;
+        height: 517px;
+        width: 596px;
+        margin-left: 0;
+        margin-top: 50px;
+        
+
+        left:17%;
+    }
+}
+
