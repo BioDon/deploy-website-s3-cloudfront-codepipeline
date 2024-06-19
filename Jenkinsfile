@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the repository
-                git 'https://github.com/BioDon/deploy-website-s3-cloudfront-codepipeline.git'
+                git branch: 'main', url: 'https://github.com/BioDon/deploy-website-s3-cloudfront-codepipeline.git'
             }
         }
 
